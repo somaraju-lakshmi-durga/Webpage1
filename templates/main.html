@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask_webpage</title>
+    
+</head>
+<body>
+    <h1>Welcome to Flask Project !!</h1>
+
+    <span>
+        <p>
+            <h2>Programing Languages :</h2>
+            {% for i in lang1 %}
+                {% if i  in ['python', 'java', 'c++', 'html'] %}
+                    {{(i.replace('a', '@')).upper()}}</br>
+                {% endif %}
+            {% endfor %}
+        </p>
+
+    </span>
+    <span>
+        <p>
+            <h2>Speaking Languages :</h2>
+            {% for i in lang1 %}
+                {% if i  in ['english', 'telugu'] %}
+                    {{i.upper()}}</br>
+                {% endif %}
+            {% endfor %}
+        </p>
+    </span>
+
+
+
+    
+    <button type="button"><a href = 'static/display.html'>Display</a> </button>
+</body>
+</html>
